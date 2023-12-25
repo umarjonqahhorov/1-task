@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main {
+  background-color: #021823;
+  height: 100vh;
+}
+
+img {
+  width: 300px;
+  height: 300px;
+  margin-top: -500px;
+  animation: image 3s forwards;
+}
+.najot-talim span {
+  font-size: 70px;
+  color: #fff;
+  margin-top: -200px;
+  animation: text 0.5s linear 0s forwards;
+}
+
+.anim span:nth-child(5) {
+  animation-delay: 2.5s;
+}
+.anim span:nth-child(4) {
+  animation-delay: 2.3s;
+}
+.anim span:nth-child(3) {
+  animation-delay: 2.2s;
+}
+.anim span:nth-child(2) {
+  animation-delay: 2.1s;
+}
+.anim span:nth-child(1) {
+  animation-delay: 2s;
+}
+.anim-talim span:nth-child(1) {
+  animation-delay: 2.4s;
+}
+.anim-talim span:nth-child(2) {
+  animation-delay: 2.3s;
+}
+.anim-talim span:nth-child(3) {
+  animation-delay: 2.2s;
+}
+.anim-talim span:nth-child(4) {
+  animation-delay: 2.1s;
+}
+.anim-talim span:nth-child(5) {
+  animation-delay: 2s;
+}
+
+.najot-talim {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.anim-talim {
+  display: flex;
+  gap: -1px;
+}
+.anim {
+  display: flex;
+  gap: -1px;
+}
+
+@keyframes text {
+  0% {
+    margin-top: -200px;
+  }
+  100% {
+    margin-top: 0px;
+  }
+}
+@keyframes image {
+  0% {
+    margin-top: -200px;
+  }
+  50% {
+    margin-top: 100px;
+    width: 400px;
+    height: 400px;
+  }
+  100% {
+    margin-top: 0px;
+    width: 300px;
+    height: 300px;
+  }
+}
